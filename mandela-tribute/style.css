@@ -1,0 +1,52 @@
+#main {
+  width: 90%;
+  box-shadow: 2px 2px 3px 2px #000;
+  margin: 0 auto;
+  display:grid;
+  grid-template: 5% 95%/ 1fr 3fr 1fr;
+  
+  grid-template-areas:
+    "title title title"
+    "img-div img-div img-div"
+    "tribute-info tribute-info tribute-info";
+    
+}
+
+#title {
+  grid-area: title;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EEEEEE;
+  border-bottom: 2px solid black;
+}
+
+#img-div {
+  grid-area: img-div; 
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  background: #BDBDBD;
+  padding: 20px auto;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 3% auto;
+}
+
+#img-caption {
+  text-align: center;
+  margin: 1% auto;
+}
+
+#tribute-info {
+  grid-area: tribute-info;
+  text-align: justify;
+  margin: 5% 15%;
+  line-height: 1.6;
+  font-size: 1.5em;
+}
